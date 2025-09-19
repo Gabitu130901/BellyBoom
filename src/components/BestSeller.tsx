@@ -30,7 +30,7 @@ const BestSeller: React.FC = () => {
   ];
 
   return (
-    <section id="best-seller" className="py-20 bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 relative overflow-hidden">
+    <section id="best-seller" className="py-20 bg-ivory relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-16 left-24 w-80 h-80 bg-yellow-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-16 right-24 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
@@ -38,8 +38,8 @@ const BestSeller: React.FC = () => {
 
       <div className="relative z-10 container mx-auto px-4">
         <div className="text-center mb-12">
-          <span className="inline-flex items-center px-4 py-2 bg-yellow-500/20 rounded-full text-yellow-300 text-sm font-medium backdrop-blur-sm border border-yellow-400/30 mb-6">
-            <Crown className="w-4 h-4 mr-2" />
+          <span className="inline-flex items-center px-4 py-2 bg-yellow-500/20 rounded-full text-charcoal/70 text-sm font-medium backdrop-blur-sm border border-yellow-400/30 mb-6">
+            <Crown className="w-4 h-4 mr-2 text-charcoal/70" />
             Best Seller
           </span>
 
@@ -47,7 +47,7 @@ const BestSeller: React.FC = () => {
             Cele Mai Căutate Piese
           </h2>
 
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-charcoal/70  max-w-3xl mx-auto">
             Alese de mii de mămici – verificate, iubite și recomandate.
           </p>
         </div>

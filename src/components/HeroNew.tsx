@@ -87,14 +87,14 @@ const HeroNew: React.FC = () => {
             </div>
 
             {/* Main Headline */}
-            <div>
-              <h1 className="text-6xl lg:text-8xl font-bold text-charcoal leading-tight mb-6">
+            <div className="relative z-10">
+              <h1 className="text-6xl lg:text-8xl font-bold text-charcoal mb-6">
                 Mama
                 <span className="block bg-gradient-to-r from-coral to-emerald bg-clip-text text-transparent">
                   Stylish
                 </span>
               </h1>
-              <p className="text-2xl text-charcoal/80 leading-relaxed">
+              <p className="text-2xl text-charcoal/80">
                 Transformă fiecare zi din sarcină într-o 
                 <span className="font-semibold text-coral"> experiență magică</span> cu 
                 colecțiile noastre exclusive! ✨
@@ -240,16 +240,6 @@ const HeroNew: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom CTA Bar */}
-        <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-sand p-4 z-40 lg:hidden">
-          <button 
-            onClick={handleStartJourney}
-            className="w-full bg-gradient-to-r from-coral to-emerald text-white py-3 rounded-2xl font-semibold flex items-center justify-center"
-          >
-            <Baby className="mr-2 h-5 w-5" />
-            Începe Călătoria
-          </button>
-        </div>
       </div>
     </section>
   );

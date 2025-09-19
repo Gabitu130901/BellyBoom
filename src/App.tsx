@@ -1,31 +1,26 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import AuthModalNew from './components/AuthModalNew';
+import BestSeller from './components/BestSeller';
+import CartDrawer from './components/CartDrawer';
+import Community from './components/Community';
+import CommunityBlog from './components/CommunityBlog';
+import FavoritesDrawer from './components/FavoritesDrawer';
+import FeaturesNew from './components/FeaturesNew';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import HeroNew from './components/HeroNew';
-import PregnancyVisualizer from './components/PregnancyVisualizer';
-import FeaturesNew from './components/FeaturesNew';
-import PregnancyJourney from './components/PregnancyJourney';
-import Products from './components/Products';
-import ReviewsNew from './components/ReviewsNew';
-import LiveOrders from './components/LiveOrders';
-import Community from './components/Community';
-import MobileMenu from './components/MobileMenu';
-import Footer from './components/Footer';
-import BestSeller from './components/BestSeller';
 import LimitedOffers from './components/LimitedOffers';
-import ProductsGeneral from './components/ProductsGeneral';
-import ProductsFlashSale from './components/ProductsFlashSale';
-import ProductsDiscounted from './components/ProductsDiscounted';
-import MomsCalendar from './components/MomsCalendar';
-import { ShopProvider } from './context/ShopContext';
-import AuthModalNew from './components/AuthModalNew';
-import CartDrawer from './components/CartDrawer';
-import FavoritesDrawer from './components/FavoritesDrawer';
-import Contact from './components/Contact';
-import SizeGuide from './components/SizeGuide';
-import CommunityBlog from './components/CommunityBlog';
 import LiveSupport from './components/LiveSupport';
-import CommunityRewardsAnnouncement from './components/CommunityRewardsAnnouncement';
-import BellyCoinsAnnouncement from './components/BellyCoinsAnnouncement';
+import MobileMenu from './components/MobileMenu';
+import PregnancyJourney from './components/PregnancyJourney';
+import PregnancyVisualizer from './components/PregnancyVisualizer';
+import Products from './components/Products';
+import ProductsDiscounted from './components/ProductsDiscounted';
+import ProductsFlashSale from './components/ProductsFlashSale';
+import ProductsGeneral from './components/ProductsGeneral';
+import ReviewsNew from './components/ReviewsNew';
+import SizeGuide from './components/SizeGuide';
+import { ShopProvider } from './context/ShopContext';
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,7 +40,6 @@ function App() {
         <BestSeller />
         <LimitedOffers />
         <FeaturesNew />
-        <MomsCalendar />
         <ProductsGeneral />
         <ProductsFlashSale />
         <ProductsDiscounted />
@@ -53,18 +47,14 @@ function App() {
         <Products />
         <CommunityBlog />
         <ReviewsNew />
-        <LiveOrders />
         <Community />
         <SizeGuide />
-        <Contact />
         <Footer />
         <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
         <AuthModalNew />
         <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
         <FavoritesDrawer open={favoritesOpen} onClose={() => setFavoritesOpen(false)} />
         <LiveSupport />
-        <CommunityRewardsAnnouncement />
-        <BellyCoinsAnnouncement />
       </div>
     </ShopProvider>
   );

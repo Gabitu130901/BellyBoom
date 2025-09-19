@@ -125,8 +125,8 @@ const Products: React.FC = () => {
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <span className="inline-flex items-center px-4 py-2 bg-purple-500/20 rounded-full text-purple-300 text-sm font-medium backdrop-blur-sm border border-purple-400/30 mb-6">
-            <TrendingUp className="w-4 h-4 mr-2" />
+          <span className="inline-flex items-center px-4 py-2 bg-purple-500/20 rounded-full text-charcoal/70 text-sm font-medium backdrop-blur-sm border border-purple-400/30 mb-6">
+            <TrendingUp className="w-4 h-4 mr-2 text-charcoal/70" />
             Colecții Recomandate
           </span>
           
@@ -146,7 +146,7 @@ const Products: React.FC = () => {
               className={`flex items-center px-6 py-3 rounded-2xl font-medium transition-all duration-300 backdrop-blur-sm border ${
                 activeFilter === category.id
                   ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white border-pink-400'
-                  : 'bg-white/5 text-gray-300 border-white/10 hover:bg-white/10 hover:border-pink-400/30'
+                  : 'bg-white/5 text-charcoal/70 border-white/10 hover:bg-white/10 hover:border-pink-400/30'
               }`}
             >
               <span className="mr-2">{category.icon}</span>

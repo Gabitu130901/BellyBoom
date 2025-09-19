@@ -173,7 +173,7 @@ const Footer: React.FC = () => {
       <div className="relative z-10 border-t border-pink-100">
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <div className="flex items-center space-x-6 text-slate-600 text-sm">
+            <div className="flex md:flex-row flex-col items-center space-y-6 md:space-x-6 text-slate-600 text-sm">
               <span>&copy; 2024 BellyBoom. Toate drepturile rezervate.</span>
               <a href="#" className="hover:text-pink-600 transition-colors">Politica de Confidențialitate</a>
               <a href="#" className="hover:text-pink-600 transition-colors">Termeni și Condiții</a>

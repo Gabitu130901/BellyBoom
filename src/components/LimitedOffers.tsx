@@ -24,7 +24,7 @@ const LimitedOffers: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-indigo-950 via-slate-950 to-purple-950 relative overflow-hidden">
+    <section className="py-20 bg-white relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-16 right-24 w-80 h-80 bg-red-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-16 left-24 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
@@ -41,7 +41,7 @@ const LimitedOffers: React.FC = () => {
             Limitate în Timp & Stoc
           </h2>
 
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
             Spune-le „da” acum – se pot epuiza oricând. Poți evidenția „Colecția zilei” sau „Stocuri limitate”.
           </p>
         </div>
@@ -64,12 +64,12 @@ const LimitedOffers: React.FC = () => {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
                   <div>
-                    <h3 className="text-2xl font-bold text-white">{offer.title}</h3>
-                    <p className="text-pink-300 font-medium">{offer.subtitle}</p>
+                    <h3 className="text-2xl font-bold text-black">{offer.title}</h3>
+                    <p className="text-charcoal/70 font-medium">{offer.subtitle}</p>
                   </div>
                   <Zap className="w-6 h-6 text-yellow-400 animate-pulse" />
                 </div>
-                <p className="text-gray-300 mb-4">{offer.desc}</p>
+                <p className="text-charcoal/70 mb-4">{offer.desc}</p>
                 <button className="w-full bg-gradient-to-r from-red-500 to-orange-600 hover:from-red-600 hover:to-orange-700 text-white py-3 px-6 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
                   <ShoppingBag className="w-5 h-5 mr-2" />
                   Prinde Oferta

@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, User, Heart, ShoppingBag, Search, Settings, LogOut, Crown, Sparkles } from 'lucide-react';
+import { X, Settings, LogOut, Crown, Sparkles } from 'lucide-react';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -81,25 +81,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
           </nav>
         </div>
 
-        {/* Quick Actions */}
-        <div className="p-6 border-t border-white/10">
-          <div className="grid grid-cols-3 gap-4">
-            <button className="flex flex-col items-center p-4 rounded-2xl bg-white/5 hover:bg-pink-500/20 transition-colors group">
-              <Search className="w-6 h-6 text-gray-400 group-hover:text-pink-300 mb-2" />
-              <span className="text-xs text-gray-400 group-hover:text-pink-300">Căutare</span>
-            </button>
-            <button className="flex flex-col items-center p-4 rounded-2xl bg-white/5 hover:bg-pink-500/20 transition-colors group relative">
-              <Heart className="w-6 h-6 text-gray-400 group-hover:text-pink-300 mb-2" />
-              <span className="text-xs text-gray-400 group-hover:text-pink-300">Favorite</span>
-              <span className="absolute -top-1 -right-1 bg-coral text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
-            </button>
-            <button className="flex flex-col items-center p-4 rounded-2xl bg-white/5 hover:bg-pink-500/20 transition-colors group relative">
-              <ShoppingBag className="w-6 h-6 text-gray-400 group-hover:text-pink-300 mb-2" />
-              <span className="text-xs text-gray-400 group-hover:text-pink-300">Coș</span>
-              <span className="absolute -top-1 -right-1 bg-coral text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">2</span>
-            </button>
-          </div>
-        </div>
 
         {/* Current Challenges */}
         <div className="p-6 border-t border-white/10">

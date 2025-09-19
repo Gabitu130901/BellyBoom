@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle, onOpenCart, onOpenFavorit
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center space-x-2 group cursor-pointer">
+            <div className="flex items-center space-x-2 group cursor-pointer relative z-10">
               <div className="relative">
                 <BellyBoomLogo />
                 <Sparkles className="absolute -top-1 -right-1 h-4 w-4 text-emerald animate-pulse" />
@@ -94,7 +94,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle, onOpenCart, onOpenFavorit
             </nav>
 
             {/* Desktop Actions */}
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="flex items-center space-x-4">
               <button 
                 onClick={() => setSearchOpen(!searchOpen)}
                 className="p-2 rounded-full bg-sand hover:bg-sand/70 transition-colors"
@@ -240,18 +240,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle, onOpenCart, onOpenFavorit
         </div>
       )}
 
-      {/* Pregnancy Week Tracker */}
-      <div className="bg-ivory backdrop-blur-sm border-b border-sand">
-        <div className="container mx-auto px-4 py-2">
-          <div className="flex items-center justify-center space-x-4 text-sm">
-            <span className="text-coral">🤱 Săptămâna 24</span>
-            <span className="text-slate-400">|</span>
-            <span className="text-charcoal">Bebelușul tău are mărimea unui știulete de porumb!</span>
-            <span className="text-slate-400">|</span>
-            <button className="text-coral hover:opacity-80 underline">Actualizează săptămâna</button>
-          </div>
-        </div>
-      </div>
+    
 
       {/* Profile Page Modal */}
       {showProfile && (

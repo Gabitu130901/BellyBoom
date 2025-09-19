@@ -41,7 +41,7 @@
 
 /* Temă globală roz pal */
 :root {
-  --bg: 245 245 248; /* foarte deschis */
+  --bg: 255 255 255; /* white */
 }
 
 html, body, #root {

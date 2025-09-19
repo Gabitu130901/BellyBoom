@@ -194,7 +194,7 @@ const ReviewsNew: React.FC = () => {
           <h2 className="text-5xl lg:text-7xl font-bold mb-6 text-charcoal">
             Ce Spun
             <span className="block bg-gradient-to-r from-coral to-emerald bg-clip-text text-transparent">
-              Mamicile Reale
+              Mamicile 
             </span>
           </h2>
           
