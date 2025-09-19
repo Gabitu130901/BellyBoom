@@ -122,7 +122,6 @@ const HeroNew: React.FC = () => {
               >
                 <Baby className="mr-3 h-6 w-6" />
                 Începe Călătoria Magică
-                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
               </button>
               
               <p className="text-charcoal/60 text-sm flex items-center">
