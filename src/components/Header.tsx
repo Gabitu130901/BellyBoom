@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle, onOpenCart, onOpenFavorit
                 <BellyBoomLogo />
                 <Sparkles className="absolute -top-1 -right-1 h-4 w-4 text-emerald animate-pulse" />
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-coral to-emerald bg-clip-text text-transparent">
+              <span className="hidden md:block text-2xl font-bold bg-gradient-to-r from-coral to-emerald bg-clip-text text-transparent">
                 BellyBoom
               </span>
             </div>
