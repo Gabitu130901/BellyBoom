@@ -53,7 +53,7 @@ const ProductsGeneral: React.FC<ProductsGeneralProps> = ({ month }) => {
         <div className="container mx-auto px-4">
           <div className="md:flex flex-col items-center justify-between mb-6 text-center">
             <h2 className="text-4xl font-bold text-slate-900 items-center mb-5">Produse Generale</h2>
-          <div className="flex gap-2 jusitfy-center items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 justify-center items-center mb-4">
             {['all','sport','casual','iesit','elegant'].map(s => (
               <button key={s} onClick={() => setStyleFilter(s as any)} className={`px-4 py-2 rounded-full text-sm border ${styleFilter===s?'bg-pink-500 text-white border-pink-500':'bg-white text-slate-700 border-pink-200 hover:bg-pink-50'}`}>{s==='all'?'Toate':s.charAt(0).toUpperCase()+s.slice(1)}</button>
             ))}
